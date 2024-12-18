@@ -31,7 +31,7 @@ A modern, production-ready template for building full-stack React applications u
 
 ### Prerequisites
 
-- **bun**: We use [bun](https://bun.sh/) as the package manager for this project. To install `bun` globally:
+This template uses [bun](https://bun.sh/) as the package manager and Javascript Runtime. So, you need to install `bun` globally:
 
   ```bash
   curl -fsSL https://bun.sh/install | bash

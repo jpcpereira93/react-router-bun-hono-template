@@ -2,6 +2,7 @@
   "name": "react-router-bun-hono-template",
   "version": "v0.0.1",
   "private": true,
+  "sideEffects": true,
   "type": "module",
   "description": "A React Router v7 template using Bun, Hono and Vitest.",
   "author": "José Pereira",
@@ -13,23 +14,24 @@
   "homepage": "https://github.com/jpcpereira93/react-router-bun-hono-template#readme",
   "scripts": {
     "build": "cross-env NODE_ENV=production react-router build",
-    "dev": "react-router dev",
-    "start": "cross-env NODE_ENV=production react-router-serve ./build/server/index.js",
+    "dev": "bunx --bun vite",
+    "start": "cross-env NODE_ENV=production bun ./build/server/index.js",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
     "@react-router/node": "^7.0.2",
     "@react-router/serve": "^7.0.2",
     "isbot": "^5.1.17",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-router": "^7.0.2"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router": "^7.0.2",
+    "react-router-hono-server": "^2.2.1"
   },
   "devDependencies": {
     "@react-router/dev": "^7.0.2",
     "@types/node": "^20",
-    "@types/react": "^19.0.1",
-    "@types/react-dom": "^19.0.1",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
     "autoprefixer": "^10.4.20",
     "cross-env": "^7.0.3",
     "postcss": "^8.4.49",

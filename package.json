@@ -16,7 +16,8 @@
     "build": "cross-env NODE_ENV=production react-router build",
     "dev": "bunx --bun vite",
     "start": "cross-env NODE_ENV=production bun ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
+    "typecheck": "react-router typegen && tsc",
+    "check": "biome check --write ."
   },
   "dependencies": {
     "@react-router/node": "^7.0.2",
@@ -28,6 +29,7 @@
     "react-router-hono-server": "^2.2.1"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@react-router/dev": "^7.0.2",
     "@types/node": "^20",
     "@types/react": "^18.3.1",

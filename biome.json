@@ -180,6 +180,22 @@
           }
         }
       }
+    },
+    {
+      "include": ["*.test.tsx", "*.test.ts"],
+      "javascript": {
+        "globals": [
+          "afterEach",
+          "afterAll",
+          "beforeEach",
+          "beforeAll",
+          "describe",
+          "expect",
+          "it",
+          "test",
+          "vi"
+        ]
+      }
     }
   ]
 }
